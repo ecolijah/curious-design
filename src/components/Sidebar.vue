@@ -20,7 +20,7 @@ function toggleView(option) {
                 break;
             
         case 1:
-            //contact
+            //contact card
             if (showContact.value == false)
                 showContact.value = !showContact.value;
                 showAbout.value = false;
