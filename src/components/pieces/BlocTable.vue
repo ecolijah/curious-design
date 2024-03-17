@@ -1,9 +1,8 @@
 <template>
     <div>
-        <h1>about section</h1>
+        <h1>Bloc Table</h1>
     </div>
     
 </template>
-
 <style scoped>
 </style>
