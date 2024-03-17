@@ -3,9 +3,15 @@
 import {ref} from "vue";
 import About from "./About.vue";
 import Contact from "./Contact.vue";
+import PicturesVue from "./Pictures.vue";
 
+//utility: onmount is false
 var showAbout =  ref(false);
 var showContact =  ref(false);
+
+//pieces: onmount is true
+var showPictures = ref(true);
+
 
 function toggleView(option) {
     //ideally pass argument for reusable function
@@ -17,12 +23,20 @@ function toggleView(option) {
             if (showAbout.value == false)
                 showAbout.value = !showAbout.value;
                 showContact.value =  false;
+                showPictures.value = false;
                 break;
             
         case 1:
             //contact card
             if (showContact.value == false)
                 showContact.value = !showContact.value;
+                showAbout.value = false;
+                showPictures.value = false;
+                break;
+        case 2:
+            if (showPictures.value == false)
+                showPictures.value =  true;
+                showContact.value = false;
                 showAbout.value = false;
                 break;
 
@@ -41,8 +55,8 @@ function toggleView(option) {
 
         <div class="buttons">
             <ul>
-                <li>dvd cabinet</li>
-                <li>bloc table</li>
+                <button @click="toggleView(2)">dvd cabinet</button>
+                <button @click="toggleView(2)">bloc table</button>
             </ul>
         </div>
 
@@ -57,6 +71,7 @@ function toggleView(option) {
             <About />
         </div>
         <Contact v-if="showContact" />
+        <PicturesVue v-if="showPictures" />
 
 
     </div>
