@@ -61,8 +61,9 @@ function toggleView(option) {
         <div class="sidebar">
 
             <div class="logo">
-                <h1>curious</h1>
-                <h2>design studio</h2>
+                <img src="../assets/curious-logo.png" alt="logo"/>
+                <!-- <h1>curious</h1>
+                <h5>design studio</h5> -->
             </div>
 
             <div class="buttons">
@@ -99,35 +100,54 @@ function toggleView(option) {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        background-color: blue;
+        /* background-color: blue; */
     }
 
     .sidebar {
         display: flex;
         flex-direction: column;
-        background-color: lightgreen;
-        width: 300px;
+        /* background-color: lightgreen; */
+        width: 250px;
         justify-content: flex-start;
     }
 
     .logo {
         
-        background-color: bisque;
+        /* background-color: bisque; */
         text-align: left;
-        padding: 0em 2.5em;
+        padding: 0em 2.5em;  
+        /* min-height: 20vh; */
+        /* padding-right: 60px; */
 
     }
+
+    img {
+        max-width: 100%; /* Maximum width of the image */
+        max-height: 100%; /* Maximum height of the image */
+        object-fit: contain; /*Maintain aspect ratio and fit within the container*/
+    }
+
+    h1 {
+        /* background-color: aqua; */
+    }
+
+    h5 {
+        /* background-color: aliceblue; */
+    }
+
 
     .buttons {
         display: flex;
-        height: 75vh;
+        min-height: 70vh;
         justify-content: flex-start;
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
     }
 
     .buttons-2 {
+        min-height: 10vh;
         display: flex;
         justify-content: flex-start;
+        /* background-color: red; */
     }
 
     .content {
@@ -135,6 +155,7 @@ function toggleView(option) {
         display: flex;
         justify-content: center;
         /* align-items: center; */
+        /* background-color: brown; */
     }
     ul {
         display: flex;
