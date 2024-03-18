@@ -48,7 +48,7 @@ function toggleView(option) {
                 showBlocTable.value = false;
                 showContact.value = false;
                 showAbout.value = false;
-                break;        
+                break;       
 
     }
 }
