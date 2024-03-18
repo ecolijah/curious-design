@@ -5,8 +5,8 @@ import BlocTable from './components/pieces/BlocTable.vue';
 
 <template>
   
-  <!-- <Controller /> -->
-  <BlocTable />
+  <Controller />
+  <!-- <BlocTable /> -->
 
 </template>
 

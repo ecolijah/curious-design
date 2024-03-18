@@ -5,9 +5,9 @@ import {ref} from "vue";
     //selected index
 var selectedIndex =  ref(1);
 
-function traverse(action) {
+function traverse(option) {
 
-    switch(action) {
+    switch(option) {
         //next
         case 0:
             if (selectedIndex.value !=4)
@@ -28,8 +28,7 @@ function traverse(action) {
 <template>
 
     <div class="image-container">
-        <!-- <h1>bloc table</h1> -->
-        <img src="./piece-assets/bloc-table/{{ selectedIndex.value }}.JPG" alt="bloc-table">
+        <img src="./piece-assets/bloc-table/4.JPG" alt="bloc-table">
         
         
         <div class="nav">
@@ -50,6 +49,7 @@ function traverse(action) {
         flex-direction: column;
         height: 95vh;
         /* object-fit: contain; */
+        /* align-items: center; */
        
     }
     .nav {
@@ -63,6 +63,7 @@ function traverse(action) {
         max-width: 100%; /* Maximum width of the image */
         max-height: 100%; /* Maximum height of the image */
         object-fit: contain; /*Maintain aspect ratio and fit within the container*/
+
     }
 
 </style>
