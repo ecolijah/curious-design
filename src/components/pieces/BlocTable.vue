@@ -1,32 +1,32 @@
 <script setup>
-    import {ref} from "vue";
 
-    //possible images
-    var index = [1,2,3,4];
+import {ref} from "vue";
+
     //selected index
-    var selectedIndex =  ref(1);
+var selectedIndex =  ref(1);
 
-    function traverse(action) {
+function traverse(action) {
 
-        switch(action) {
-            //next
-            case 0:
-                if (selectedIndex.value !=4)
-                    selectedIndex.value += 1;
-                break;
-            case 1:
-                if (selectedIndex.value !=1)
-                    selectedIndex.value -= 1;
-                break;
-        }
-        console.log("selectedIndex: " + selectedIndex.value)
-
+    switch(action) {
+        //next
+        case 0:
+            if (selectedIndex.value !=4)
+                selectedIndex.value += 1;
+            break;
+        case 1:
+            if (selectedIndex.value !=1)
+                selectedIndex.value -= 1;
+            break;
     }
+    console.log("selectedIndex: " + selectedIndex.value)
+
+}
 
 
 </script>
 
 <template>
+
     <div class="image-container">
         <!-- <h1>bloc table</h1> -->
         <img src="./piece-assets/bloc-table/{{ selectedIndex.value }}.JPG" alt="bloc-table">
