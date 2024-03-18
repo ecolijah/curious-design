@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>DvdCabinet</h1>
+        <h1>dvd cabinet</h1>
     </div>
     
 </template>

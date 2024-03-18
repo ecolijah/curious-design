@@ -103,12 +103,56 @@ function toggleView(option) {
     }
 
     .sidebar {
-        position: static;
+        display: flex;
+        flex-direction: column;
         background-color: lightgreen;
+        width: 300px;
+        justify-content: flex-start;
+    }
+
+    .logo {
+        
+        background-color: bisque;
+        text-align: left;
+        padding: 0em 2.5em;
+
+    }
+
+    .buttons {
+        display: flex;
+        height: 75vh;
+        justify-content: flex-start;
+        background-color: blueviolet;
+    }
+
+    .buttons-2 {
+        display: flex;
+        justify-content: flex-start;
     }
 
     .content {
         flex: 1;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        width: 100px;
+        height: 30px;
+        background: none; /* Removes background color */
+        border: none; /* Removes border */
+        padding: 0; /* Removes padding */
+        margin: 0; /* Removes margin */
+        cursor: pointer; /* Adds pointer cursor */
+        text-align: left; /* Aligns text to the left */
+        font-size: 1em;
+        font-weight: 500;
+        font-family: inherit;
+        cursor: pointer;
     }
 
 </style>
