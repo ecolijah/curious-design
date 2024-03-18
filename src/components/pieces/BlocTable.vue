@@ -28,7 +28,12 @@ function traverse(option) {
 <template>
 
     <div class="image-container">
-        <img src="./piece-assets/bloc-table/4.JPG" alt="bloc-table">
+
+
+        <img v-if="selectedIndex==1"src="./piece-assets/bloc-table/1.JPG" alt="bloc-table">
+        <img v-if="selectedIndex==2"src="./piece-assets/bloc-table/2.JPG" alt="bloc-table">
+        <img v-if="selectedIndex==3"src="./piece-assets/bloc-table/3.JPG" alt="bloc-table">
+        <img v-if="selectedIndex==4"src="./piece-assets/bloc-table/4.JPG" alt="bloc-table">
         
         
         <div class="nav">
