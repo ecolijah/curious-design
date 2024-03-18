@@ -56,27 +56,31 @@ function toggleView(option) {
 </script>
 
 <template>
-    <div class="sidebar-container">
+    <div class="controller-container">
 
-        <div class="logo">
-            <h1>curious</h1>
-            <h2>design studio</h2>
+        <div class="sidebar">
+
+            <div class="logo">
+                <h1>curious</h1>
+                <h2>design studio</h2>
+            </div>
+
+            <div class="buttons">
+                <ul>
+                    <button @click="toggleView(3)">dvd cabinet</button>
+                    <button @click="toggleView(2)">bloc table</button>
+                </ul>
+            </div>
+
+            <div class="buttons-2">
+                <ul>
+                    <button @click="toggleView(0)">about</button>
+                    <button @click="toggleView(1)">contact</button>
+                </ul>
+            </div>
+
         </div>
-
-        <div class="buttons">
-            <ul>
-                <button @click="toggleView(3)">dvd cabinet</button>
-                <button @click="toggleView(2)">bloc table</button>
-            </ul>
-        </div>
-
-        <div class="buttons-2">
-            <ul>
-                <button @click="toggleView(0)">about</button>
-                <button @click="toggleView(1)">contact</button>
-            </ul>
-
-        </div>
+        
 
         <div class="content">
             <About v-if="showAbout" />
@@ -86,9 +90,25 @@ function toggleView(option) {
         </div>
 
     </div>
-
     
 </template>
 
 <style scoped>
+
+    .controller-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: blue;
+    }
+
+    .sidebar {
+        position: static;
+        background-color: lightgreen;
+    }
+
+    .content {
+        flex: 1;
+    }
+
 </style>
