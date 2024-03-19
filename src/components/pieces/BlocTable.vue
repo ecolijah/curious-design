@@ -98,6 +98,8 @@ function traverse(option) {
         max-height: 65vh; /* Ensures the image doesn't exceed the height of its container */
         width: auto;
         height: auto;
+        border-radius: 6px;
+
     }
 
     .nav {

@@ -135,7 +135,9 @@
     max-height: 65vh;
     max-width: 80vw;
     min-height: 400px;
+    /* padding-right: 20px; */
     /* background-color: blue; */
+    
     justify-content: center;
 }
 
@@ -145,6 +147,7 @@ img {
         max-width: 100%; /* Maximum width of the image */
         max-height: 65vh; /* Maximum height of the image */
         object-fit: contain; /*Maintain aspect ratio and fit within the container*/
+        border-radius: 6px;
         
 }
 
