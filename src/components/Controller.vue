@@ -98,7 +98,7 @@ function toggleView(option) {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        background-color: blue;
+        /* background-color: blue; */
         height: 100vh;
     }
 
@@ -114,10 +114,9 @@ function toggleView(option) {
 
     .logo {
         
-        /* background-color: bisque; */
-        text-align: left;
-        padding: 0em 2.5em;  
-        
+        background-color: bisque;
+        padding: 30px;
+        height: 20vh;
 
     }
 
@@ -129,16 +128,18 @@ function toggleView(option) {
 
     .buttons {
         display: flex;
-        min-height: 70vh;
+        min-height: 60vh;
         justify-content: flex-start;
-        /* background-color: blueviolet; */
+        align-items: center;
+        background-color: blueviolet;
     }
 
     .buttons-2 {
-        min-height: 10vh;
+        min-height: 20vh;
         display: flex;
         justify-content: flex-start;
-        /* background-color: red; */
+        align-items: center;
+        background-color: red;
     }
 
     .content {
@@ -146,7 +147,7 @@ function toggleView(option) {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: brown;
+        /* background-color: brown; */
     }
     ul {
         display: flex;
