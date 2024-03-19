@@ -82,8 +82,8 @@ function toggleView(option) {
         
 
         <div class="content">
-            <About v-if="showAbout" />
-            <Contact v-if="showContact" />
+            <About v-show="showAbout" />
+            <Contact v-show="showContact" />
             <BlocTable v-if="showBlocTable" />
             <DvdCabinet v-if="showDvdCabinet" />
         </div>
@@ -173,8 +173,8 @@ function toggleView(option) {
         margin: 0; /* Removes margin */
         cursor: pointer; /* Adds pointer cursor */
         text-align: left; /* Aligns text to the left */
-        font-size: 14pt;
-        font-weight: 400;
+        font-size: 10pt;
+        font-weight: 500;
         font-family: inherit;
         cursor: pointer;
         color: #3a3a3a;
