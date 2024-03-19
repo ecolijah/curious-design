@@ -137,9 +137,20 @@ function toggleView(option) {
         justify-content: flex-start;
         align-items: flex-start;
         padding-left: 15px;
+        transition: color 0.3s ease-in-out;
         /* background-color: blueviolet; */
         
         
+    }
+
+    .buttons button:hover {
+        color: #9FCB85;
+
+
+    }
+    .buttons-2 button:hover {
+        color: #9FCB85;
+
     }
 
     .buttons-2 {
@@ -148,6 +159,7 @@ function toggleView(option) {
         justify-content: flex-start;
         align-items: flex-start;
         padding-left: 15px;
+        transition: color 0.5s ease-in-out;
 
         /* background-color: red; */
     }
@@ -174,11 +186,13 @@ function toggleView(option) {
         cursor: pointer; /* Adds pointer cursor */
         text-align: left; /* Aligns text to the left */
         font-size: 10pt;
-        font-weight: 500;
+        font-weight: 400;
         font-family: inherit;
         cursor: pointer;
-        /* color: #3a3a3a; */
+        color: #474747;
     }
+
+
     .selected {
         color: #9E9E9E;
         text-decoration: line-through;

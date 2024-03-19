@@ -35,9 +35,9 @@
             </div>
 
             <div class="links">
-                <a href="">instagram</a>
-                <a href="https://github.com/ecolijah">github</a>
-                <a href="https://www.linkedin.com/in/elijah-lopez-65b809238/">linkedin</a>
+                <a href="" target="_blank">instagram</a>
+                <a href="https://github.com/ecolijah" target="_blank">github</a>
+                <a href="https://www.linkedin.com/in/elijah-lopez-65b809238/" target="_blank">linkedin</a>
             </div>
 
         </div>
@@ -98,11 +98,12 @@
     /* background-color: aquamarine; */
     max-height: 50px;
     justify-content: space-between;
+    /* margin-bottom: -10px; */
 }
 
 .titles {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     /* padding-bottom: 90px; */
@@ -112,12 +113,14 @@
 .titles p {
     /* height: 5px; */
     /* background-color: black; */
+    margin-bottom: -20px;
+    /* background-color: #79A166; */
 }
 
 .links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 15%;
     /* background-color: aliceblue; */
 
@@ -129,8 +132,9 @@
 
 .image-container {
     display: flex;
-    max-height: 570px;
-    max-width: 430px;
+    max-height: 65vh;
+    max-width: 80vw;
+    min-height: 400px;
     /* background-color: blue; */
     justify-content: center;
 }
