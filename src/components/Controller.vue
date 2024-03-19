@@ -137,10 +137,15 @@ function toggleView(option) {
         justify-content: flex-start;
         align-items: flex-start;
         padding-left: 15px;
-        transition: color 0.3s ease-in-out;
+        
         /* background-color: blueviolet; */
         
         
+    }
+
+    .buttons button {
+        transition: color 0.3s ease;
+
     }
 
     .buttons button:hover {
@@ -153,13 +158,16 @@ function toggleView(option) {
 
     }
 
+    .buttons-2 button {
+        transition: color 0.3s ease;
+    }
+
     .buttons-2 {
         min-height: 20vh;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         padding-left: 15px;
-        transition: color 0.5s ease-in-out;
 
         /* background-color: red; */
     }

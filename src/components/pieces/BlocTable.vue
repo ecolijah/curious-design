@@ -41,7 +41,7 @@ function traverse(option) {
         </div>
 
         <div class="nav">
-            <h5>white birch plywood, concrete</h5>
+            <h5>white birch plywood, concrete (2023)</h5>
 
             <div>
                 <button @click="traverse(1)"><</button>

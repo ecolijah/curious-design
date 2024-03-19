@@ -84,7 +84,7 @@
 .details {
     display: flex;
     flex-direction: column;
-    max-width: 450px;
+    max-width: 500px;
     min-width: 300px;
     padding-right: 90px;
     /* background-color: brown; */
@@ -126,8 +126,14 @@
 
 }
 .links a {
-    color: #79A166;
+    color: #9FCB85;
     font-weight: 500;
+    text-decoration: none;
+    transition:  color 0.5s ease;
+}
+
+.links a:hover {
+    color: #79a166;
 }
 
 .image-container {
