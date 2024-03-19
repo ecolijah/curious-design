@@ -5,13 +5,28 @@
 
         </div>
         <div class="image-container">
-            <img src="../assets/about-me.png" alt="aboutmepic" />
+            <img src="../assets/aboutme-pic.png" alt="aboutmepic" />
         </div>
     </div>
     
 </template>
 
 <style scoped>
+
+.container {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+}
+.details {
+    width: 500px;
+    background-color: brown;
+}
+
+.image-container {
+    height: 80vh;
+    background-color: aquamarine;
+}
 
 img {
         /* width: 1920px; */
