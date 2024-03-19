@@ -62,8 +62,6 @@ function toggleView(option) {
 
             <div class="logo">
                 <img src="../assets/curious-logo.png" alt="logo"/>
-                <!-- <h1>curious</h1>
-                <h5>design studio</h5> -->
             </div>
 
             <div class="buttons">
@@ -100,14 +98,17 @@ function toggleView(option) {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        /* background-color: blue; */
+        background-color: blue;
+        height: 100vh;
     }
 
     .sidebar {
         display: flex;
+        flex: 0;
         flex-direction: column;
         /* background-color: lightgreen; */
-        width: 250px;
+     
+        min-width: 250px;
         justify-content: flex-start;
     }
 
@@ -116,8 +117,7 @@ function toggleView(option) {
         /* background-color: bisque; */
         text-align: left;
         padding: 0em 2.5em;  
-        /* min-height: 20vh; */
-        /* padding-right: 60px; */
+        
 
     }
 
@@ -126,15 +126,6 @@ function toggleView(option) {
         max-height: 100%; /* Maximum height of the image */
         object-fit: contain; /*Maintain aspect ratio and fit within the container*/
     }
-
-    h1 {
-        /* background-color: aqua; */
-    }
-
-    h5 {
-        /* background-color: aliceblue; */
-    }
-
 
     .buttons {
         display: flex;
@@ -154,8 +145,8 @@ function toggleView(option) {
         flex: 1;
         display: flex;
         justify-content: center;
-        /* align-items: center; */
-        /* background-color: brown; */
+        align-items: center;
+        background-color: brown;
     }
     ul {
         display: flex;

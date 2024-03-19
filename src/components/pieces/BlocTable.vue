@@ -2,7 +2,7 @@
 
 import {ref} from "vue";
 
-    //selected index
+//selected index
 var selectedIndex =  ref(1);
 
 function traverse(option) {
@@ -60,23 +60,21 @@ function traverse(option) {
 <style scoped>
 
     .container {
+
         display:  flex;
-        flex-direction: column;
-        object-fit: contain; /*Maintain aspect ratio and fit within the container*/
-        margin: 0 auto;
-        gap: 0px;
+        flex-direction: column;      
+        background-color: greenyellow;
+        padding: 80px;
  
     }
 
     .image-container {
+
         display:  flex;
-        /* flex-direction: column; */
-        /* height: 90vh; */
-        /* object-fit: contain; */
         align-items: center;
-        /* justify-content: flex-start; */
-        /* background-color: red; */
-        height: 87vh;
+        max-width: 2000px;
+        min-width: 600px;
+   
        
     }
     .nav {
@@ -84,19 +82,15 @@ function traverse(option) {
         justify-content: space-between;
         align-items: center;
         /* background-color: blue; */
-        height: 5vh;
+        height: 3vh;
     }
 
     img {
-        /* width: 1920px; */
-        /* height: 90vh; */
-        max-width: 100%; /* Maximum width of the image */
-        max-height: 100%; /* Maximum height of the image */
+        max-width: 100%; /*correct*/
+        max-height: 100%; 
         object-fit: contain; /*Maintain aspect ratio and fit within the container*/
 
     }
-    h5 {
-        padding: 0;
-    }
+
 
 </style>
