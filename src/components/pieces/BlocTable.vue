@@ -39,16 +39,16 @@ function traverse(option) {
         
         
         <div class="nav">
-            <h5>birch plywood and concrete</h5>
+            <h5>white birch plywood, concrete</h5>
 
             <div>
                 <button @click="traverse(1)"><</button>
                 <button @click="traverse(0)">></button>
             </div>
 
-            <div>
-                <h5>birch plywood and concrete</h5>
-            </div>
+            <!-- <div>
+                <h5>white birch plywood, concrete</h5>
+            </div> -->
             
 
         </div>
@@ -63,7 +63,7 @@ function traverse(option) {
 
         display:  flex;
         flex-direction: column;      
-        background-color: greenyellow;
+        /* background-color: greenyellow; */
         padding: 80px;
  
     }
@@ -79,10 +79,19 @@ function traverse(option) {
     }
     .nav {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: baseline;
         /* background-color: blue; */
-        height: 3vh;
+        height: 5vh;
+        color: #3a3a3a;
+        
+        gap: 33%;
+    }
+
+    h5 {
+        font-weight: 400;
+        font-size: 10pt;
+        color: #3a3a3a;
     }
 
     img {
@@ -92,5 +101,12 @@ function traverse(option) {
 
     }
 
+    button {
+        background: none; /* Removes background color */
+        border: none; /* Removes border */
+        padding: 20px; /* Removes padding */
+        margin: 0; /* Removes margin */
+        cursor: pointer; /* Adds pointer cursor */
+    }
 
 </style>

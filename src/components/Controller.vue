@@ -109,14 +109,19 @@ function toggleView(option) {
         /* background-color: lightgreen; */
      
         min-width: 250px;
-        justify-content: flex-start;
+        /* justify-content: flex-end; */
     }
 
     .logo {
         
-        background-color: bisque;
+        /* background-color: bisque; */
         padding: 30px;
-        height: 20vh;
+        padding-left: 45px;
+        padding-top: 80px;
+
+        height: 15vh;
+        min-height: 70px;
+        min-width: 183px;
 
     }
 
@@ -128,18 +133,23 @@ function toggleView(option) {
 
     .buttons {
         display: flex;
-        min-height: 60vh;
+        min-height: 65vh;
         justify-content: flex-start;
-        align-items: center;
-        background-color: blueviolet;
+        align-items: flex-start;
+        padding-left: 15px;
+        /* background-color: blueviolet; */
+        
+        
     }
 
     .buttons-2 {
         min-height: 20vh;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
-        background-color: red;
+        align-items: flex-start;
+        padding-left: 15px;
+
+        /* background-color: red; */
     }
 
     .content {
@@ -154,7 +164,8 @@ function toggleView(option) {
         flex-direction: column;
     }
     button {
-        width: 100px;
+        /* width: 100px; */
+        display: flex;
         height: 30px;
         background: none; /* Removes background color */
         border: none; /* Removes border */
@@ -162,10 +173,11 @@ function toggleView(option) {
         margin: 0; /* Removes margin */
         cursor: pointer; /* Adds pointer cursor */
         text-align: left; /* Aligns text to the left */
-        font-size: 1em;
-        font-weight: 500;
+        font-size: 14pt;
+        font-weight: 400;
         font-family: inherit;
         cursor: pointer;
+        color: #3a3a3a;
     }
 
 </style>
