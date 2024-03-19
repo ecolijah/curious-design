@@ -66,15 +66,15 @@ function toggleView(option) {
 
             <div class="buttons">
                 <ul>
-                    <button @click="toggleView(3)">dvd cabinet</button>
-                    <button @click="toggleView(2)">bloc table</button>
+                    <button @click="toggleView(3)" :class="{ selected: showDvdCabinet }">dvd cabinet</button>
+                    <button @click="toggleView(2)" :class="{ selected: showBlocTable }">bloc table</button>
                 </ul>
             </div>
 
             <div class="buttons-2">
                 <ul>
-                    <button @click="toggleView(0)">about</button>
-                    <button @click="toggleView(1)">contact</button>
+                    <button @click="toggleView(0)" :class="{ selected: showAbout }">about</button>
+                    <button @click="toggleView(1)" :class="{ selected: showContact }">contact</button>
                 </ul>
             </div>
 
@@ -177,7 +177,12 @@ function toggleView(option) {
         font-weight: 500;
         font-family: inherit;
         cursor: pointer;
-        color: #3a3a3a;
+        /* color: #3a3a3a; */
+    }
+    .selected {
+        color: #9E9E9E;
+        text-decoration: line-through;
+        
     }
 
 </style>

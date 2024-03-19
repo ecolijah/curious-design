@@ -27,6 +27,11 @@
                     adipiscing elit pellentesque habitant. Magna etiam
                     tempor orci eu  lobortis. Augue ut lectus arcu bibendum.
                 </p>
+                <p>Lorem  ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod  tempor incididunt ut 
+                    labore et dolore magna aliqua. Augue ut lectus arcu bibendum.
+                </p>
             </div>
 
             <div class="links">
