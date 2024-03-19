@@ -113,11 +113,11 @@ function toggleView(option) {
     }
 
     .logo {
-        
+        display: flex;
+        justify-content: baseline;
+        align-items:flex-end;
         /* background-color: bisque; */
-        padding: 30px;
         padding-left: 45px;
-        padding-top: 80px;
 
         height: 15vh;
         min-height: 70px;

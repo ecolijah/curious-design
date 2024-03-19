@@ -29,15 +29,17 @@ function traverse(option) {
 
     <div class="container">
 
-        <div class="image-container">
-            <img v-if="selectedIndex==1"src="./piece-assets/bloc-table/1.JPG" alt="bloc-table">
-            <img v-if="selectedIndex==2"src="./piece-assets/bloc-table/2.JPG" alt="bloc-table">
-            <img v-if="selectedIndex==3"src="./piece-assets/bloc-table/3.JPG" alt="bloc-table">
-            <img v-if="selectedIndex==4"src="./piece-assets/bloc-table/4.JPG" alt="bloc-table">
+        <div class="top-spacer"></div>
+
+        <div class="image-spacer">
+            <div class="image-container">
+                <img v-if="selectedIndex==1"src="./piece-assets/bloc-table/1.JPG" alt="bloc-table">
+                <img v-if="selectedIndex==2"src="./piece-assets/bloc-table/2.JPG" alt="bloc-table">
+                <img v-if="selectedIndex==3"src="./piece-assets/bloc-table/3.JPG" alt="bloc-table">
+                <img v-if="selectedIndex==4"src="./piece-assets/bloc-table/4.JPG" alt="bloc-table">
+            </div>
         </div>
 
-        
-        
         <div class="nav">
             <h5>white birch plywood, concrete</h5>
 
@@ -45,10 +47,6 @@ function traverse(option) {
                 <button @click="traverse(1)"><</button>
                 <button @click="traverse(0)">></button>
             </div>
-
-            <!-- <div>
-                <h5>white birch plywood, concrete</h5>
-            </div> -->
             
 
         </div>
@@ -59,30 +57,56 @@ function traverse(option) {
 
 <style scoped>
 
+    .top-spacer {
+        display: flex;
+        min-height: 15vh;
+        max-height: 15vh;
+        /* background-color: blue; */
+    }
+    .image-spacer {
+        display: flex;
+        min-height: 65vh;
+        max-height: 65vh;
+        /* background-color: yellowgreen; */
+        align-items: center;
+        justify-content: center;
+    }
+
     .container {
 
         display:  flex;
         flex-direction: column;      
         /* background-color: greenyellow; */
-        padding: 80px;
+        padding-left: 80px;
+        padding-right: 80px;
+        max-height: 100vh;
+        min-height: 100vh;
  
     }
 
     .image-container {
-
-        display:  flex;
-        align-items: center;
-        max-width: 2000px;
-        min-width: 600px;
-   
-       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 2000px;
+    max-height: 65vh; /* Set max-height to the height of image-spacer */
+    overflow: hidden; /* Ensures the image doesn't overflow its container */
     }
+
+    .image-container img {
+        max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
+        max-height: 65vh; /* Ensures the image doesn't exceed the height of its container */
+        width: auto;
+        height: auto;
+    }
+
     .nav {
         display: flex;
         justify-content: flex-start;
         align-items: baseline;
-        /* background-color: blue; */
-        height: 5vh;
+        /* background-color: brown; */
+        min-height: 20vh;
+        max-height: 20vh;
         color: #3a3a3a;
         
         gap: 33%;
@@ -94,17 +118,10 @@ function traverse(option) {
         color: #3a3a3a;
     }
 
-    img {
-        max-width: 100%; /*correct*/
-        max-height: 100%; 
-        object-fit: contain; /*Maintain aspect ratio and fit within the container*/
-
-    }
 
     button {
         background: none; /* Removes background color */
         border: none; /* Removes border */
-        padding: 20px; /* Removes padding */
         margin: 0; /* Removes margin */
         cursor: pointer; /* Adds pointer cursor */
     }
