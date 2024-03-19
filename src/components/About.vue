@@ -1,5 +1,9 @@
 <template>
     <div class="container">
+        <div class="top-spacer"></div>
+        <div class="about-container">
+            
+        
         <div class="details">
 
             <div class="heading">
@@ -26,62 +30,103 @@
             </div>
 
             <div class="links">
-                <p>instagram</p>
-                <p>github</p>
-                <p>linkedin</p>
+                <a href="">instagram</a>
+                <a href="https://github.com/ecolijah">github</a>
+                <a href="https://www.linkedin.com/in/elijah-lopez-65b809238/">linkedin</a>
             </div>
 
         </div>
         <div class="image-container">
             <img src="../assets/aboutme-pic.png" alt="aboutmepic" />
         </div>
+        </div>
+        <div class="bottom-spacer"></div>
     </div>
     
 </template>
 
 <style scoped>
 
+
+
 .container {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    /* min-height:100vh;
+    max-height: 100vh; */
     /* padding: 80px; */
+}
+.top-spacer {
+    display: flex;
+    min-height: 15vh;
+    max-height: 15vh;
+    /* background-color: yellowgreen; */
+}
+.about-container {
+    display: flex;
+    min-height: 65vh;
+    max-height: 65vh;
+
+}
+.bottom-spacer {
+    display: flex;
+    min-height: 20vh;
+    max-height: 20vh;
+    /* background-color: blueviolet; */
 }
 .details {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 450px;
     min-width: 300px;
-    background-color: brown;
+    padding-right: 90px;
+    /* background-color: brown; */
     justify-content: space-between;
 }
 
 .nameplate {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    background-color: aquamarine;
-    max-height: 80px;
+    align-items: center;
+    /* background-color: aquamarine; */
+    max-height: 50px;
     justify-content: space-between;
 }
 
 .titles {
-
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* padding-bottom: 90px; */
+    /* background-color: #79A166; */
+    gap: 10%;
+}
+.titles p {
+    /* height: 5px; */
+    /* background-color: black; */
 }
 
 .links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-right: 20px;
+    justify-content: flex-start;
+    gap: 15%;
+    /* background-color: aliceblue; */
+
+}
+.links a {
+    color: #79A166;
+    font-weight: 500;
 }
 
 .image-container {
     display: flex;
     max-height: 570px;
     max-width: 430px;
-    background-color: blue;
+    /* background-color: blue; */
     justify-content: center;
 }
 
@@ -89,8 +134,33 @@ img {
         /* width: 1920px; */
         /* height: 90vh; */
         max-width: 100%; /* Maximum width of the image */
-        max-height: 100%; /* Maximum height of the image */
+        max-height: 65vh; /* Maximum height of the image */
         object-fit: contain; /*Maintain aspect ratio and fit within the container*/
+        
+}
 
-    }
+p {
+    color: #9e9e9e;
+}
+
+h3 {
+    color: #9FCB85;
+    font-weight: 500;
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    height: 50px;
+    padding-top: 20px;
+}
+h1 {
+    font-size: 40pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    max-height: 50px;
+    /* padding-bottom: 20px; */
+}
 </style>
