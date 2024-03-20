@@ -71,8 +71,9 @@
 }
 .about-container {
     display: flex;
-    min-height: 65vh;
+    /* min-height: 65vh; */
     max-height: 65vh;
+    max-width: 75vw;
 
 }
 .bottom-spacer {
@@ -85,8 +86,8 @@
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    min-width: 300px;
-    padding-right: 90px;
+    /* min-width: 300px; */
+    padding-right: 60px;
     /* background-color: brown; */
     justify-content: space-between;
 }
@@ -140,9 +141,9 @@
     display: flex;
     max-height: 65vh;
     max-width: 80vw;
-    min-height: 400px;
+    /* min-height: 400px; */
     /* padding-right: 20px; */
-    /* background-color: blue; */
+    background-color: blue;
     
     justify-content: center;
 }
