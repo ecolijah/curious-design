@@ -3,7 +3,7 @@
 import {ref} from "vue";
 
 //selected index
-var selectedIndex =  ref(1);
+var selectedIndex = ref(1);
 
 function traverse(option) {
 
@@ -47,7 +47,19 @@ function traverse(option) {
                 <h5>(20"x30"x14")</h5>
                 <h5>©</h5>
             </div>
+
+            
+            
         </div>
+
+        <div class="nav">
+                <div class="numbers">
+                    <button @click="selectedIndex=1" :class="{ selected: selectedIndex == 1}"><h5>1</h5></button>
+                    <button @click="selectedIndex=2" :class="{ selected: selectedIndex == 2}"><h5>2</h5></button>
+                    <button @click="selectedIndex=3" :class="{ selected: selectedIndex == 3}"><h5>3</h5></button>
+                    <button @click="selectedIndex=4" :class="{ selected: selectedIndex == 4}"><h5>4</h5></button>
+                </div>
+            </div>
 
         
     </div>
@@ -73,12 +85,36 @@ function traverse(option) {
         width: 100%;
     }
 
+    .selected h5{
+        color: #3a3a3a;
+        font-weight: 700;
+        
+    }
+
+
     .caption {
         display: flex;
         width: inherit;
         justify-content: space-between;
         align-items: baseline;
         /* background-color: aqua; */
+        margin-bottom: 50px;
+    }
+
+    .numbers {
+        display: flex;
+        width: inherit;
+        /* background-color: aqua; */
+        gap: 1%;
+        /* margin-top:  5%; */
+
+    }
+
+    .numbers button {
+        font-weight: 400;
+        font-size: 8pt;
+        color: #9E9E9E;
+        /* color: blue; */
     }
 
     .container {
@@ -99,13 +135,13 @@ function traverse(option) {
     align-items: center;
     justify-content: center;
     max-width: 2000px;
-    max-height: 65vh; /* Set max-height to the height of image-spacer */
+    max-height: 63vh; /* Set max-height to the height of image-spacer */
     }
 
     .back {
         position: absolute;
         left: 0;
-        width: 30%;
+        width: 35%;
         height: 100%;
         /* background-color: antiquewhite; */
     }
@@ -113,7 +149,7 @@ function traverse(option) {
         position: absolute;
 
         right: 0;
-        width: 30%;
+        width: 65%;
         height: 100%;
         /* background-color: antiquewhite; */
     }
@@ -130,14 +166,14 @@ function traverse(option) {
     .nav {
         display: flex;
         justify-content: flex-start;
-        align-items: baseline;
+        align-items: flex-start;
         /* background-color: brown; */
         min-height: 20vh;
         max-height: 20vh;
         color: #3a3a3a;
-        
+        width: 100%;
         gap: 16%;
-        margin-top: -10px;
+        /* margin-top: -10px; */
     }
     .nav h3 {
         font-weight: 500;
@@ -146,8 +182,8 @@ function traverse(option) {
 
     h5 {
         font-weight: 400;
-        font-size: 10pt;
-        color: #3a3a3a;
+        font-size: 8pt;
+        color: #9e9e9e;
     }
 
 
