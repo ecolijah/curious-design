@@ -44,7 +44,7 @@ function traverse(option) {
             <div class="caption">
                 <h3>bloc table</h3>
                 <h5>white birch plywood, concrete         (2023)</h5>
-                <h5>(20"x30"x14")</h5>
+                <h5>(27"x35"x15")</h5>
                 <h5>©</h5>
             </div>
 
@@ -58,6 +58,13 @@ function traverse(option) {
                     <button @click="selectedIndex=2" :class="{ selected: selectedIndex == 2}"><h5>2</h5></button>
                     <button @click="selectedIndex=3" :class="{ selected: selectedIndex == 3}"><h5>3</h5></button>
                     <button @click="selectedIndex=4" :class="{ selected: selectedIndex == 4}"><h5>4</h5></button>
+                </div>
+                <div class="description">
+                    <p>Originally inspired by japanese floor tables, the height is meant for comfortable seating on the ground. the concrete base 
+                        weighs about 60lbs and the table all together about 90lbs.
+                    </p>
+                    <p>The top comes off from the base, for an easier time trransporting the heavy table.</p>
+                    <p>There is a small secret storage comportment under the table top, that is good place to hide something needed not frequently, as the tabletop is heavy.</p>
                 </div>
             </div>
 
@@ -108,6 +115,14 @@ function traverse(option) {
         gap: 1%;
         /* margin-top:  5%; */
 
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        /* background-color: yellowgreen; */
+        font-size: 8pt;
+        color: #9e9e9e;
     }
 
     .numbers button {
@@ -167,12 +182,12 @@ function traverse(option) {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        /* background-color: brown; */
+        /* background-color: rgb(255, 231, 178); */
         min-height: 20vh;
         max-height: 20vh;
         color: #3a3a3a;
         width: 100%;
-        gap: 16%;
+        /* gap: 16%; */
         /* margin-top: -10px; */
     }
     .nav h3 {
