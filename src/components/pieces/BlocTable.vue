@@ -41,7 +41,9 @@ function traverse(option) {
         </div>
 
         <div class="nav">
-            <h5>white birch plywood, concrete (2023)</h5>
+            <h3>bloc table</h3>
+            <h5>white birch plywood, concrete         (2023)</h5>
+            <h5>(20"x30"x14")</h5>
 
             <div>
                 <button @click="traverse(1)"><</button>
@@ -111,7 +113,12 @@ function traverse(option) {
         max-height: 20vh;
         color: #3a3a3a;
         
-        gap: 33%;
+        gap: 16%;
+        margin-top: -10px;
+    }
+    .nav h3 {
+        font-weight: 500;
+        font-size: 12pt;
     }
 
     h5 {
