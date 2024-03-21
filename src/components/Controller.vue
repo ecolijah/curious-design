@@ -177,7 +177,7 @@ function toggleView(option) {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* background-color: brown; */
+        background-color: rgb(219, 215, 205);
     }
     ul {
         display: flex;

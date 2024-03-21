@@ -38,20 +38,17 @@ function traverse(option) {
                 <img v-show="selectedIndex==3"src="./piece-assets/bloc-table/3.JPG" alt="bloc-table">
                 <img v-show="selectedIndex==4"src="./piece-assets/bloc-table/4.JPG" alt="bloc-table">
             </div>
-        </div>
-
-        <div class="nav">
-            <h3>bloc table</h3>
-            <h5>white birch plywood, concrete         (2023)</h5>
-            <h5>(20"x30"x14")</h5>
-
-            <div>
-                <button @click="traverse(1)"><</button>
-                <button @click="traverse(0)">></button>
+            <div class="caption">
+                <h3>bloc table</h3>
+                <h5>white birch plywood, concrete         (2023)</h5>
+                <h5>(20"x30"x14")</h5>
+                <div>
+                    <button @click="traverse(1)"><</button>
+                    <button @click="traverse(0)">></button>
+                </div>
             </div>
-            
-
         </div>
+
         
     </div>
     
@@ -70,8 +67,17 @@ function traverse(option) {
         min-height: 65vh;
         max-height: 65vh;
         /* background-color: yellowgreen; */
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .caption {
+        display: flex;
+        width: inherit;
+        justify-content: space-between;
+        /* background-color: aqua; */
     }
 
     .container {
@@ -92,7 +98,6 @@ function traverse(option) {
     justify-content: center;
     max-width: 2000px;
     max-height: 65vh; /* Set max-height to the height of image-spacer */
-    overflow: hidden; /* Ensures the image doesn't overflow its container */
     }
 
     .image-container img {
