@@ -63,7 +63,7 @@ function traverse(option) {
                     <p>Originally inspired by japanese floor tables, the height is meant for comfortable seating on the ground. the concrete base 
                         weighs about 60lbs and the table all together about 90lbs.
                     </p>
-                    <p>The top comes off from the base, for an easier time trransporting the heavy table.</p>
+                    <!-- <p>The top comes off from the base, for an easier time trransporting the heavy table.</p> -->
                     <p>There is a small secret storage comportment under the table top, that is good place to hide something needed not frequently, as the tabletop is heavy.</p>
                 </div>
             </div>
@@ -182,7 +182,7 @@ function traverse(option) {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        /* background-color: rgb(255, 231, 178); */
+        background-color: rgb(255, 231, 178);
         min-height: 20vh;
         /* max-height: 20vh; */
         color: #3a3a3a;
