@@ -114,7 +114,8 @@
 .titles p {
     /* height: 5px; */
     /* background-color: black; */
-    margin-bottom: -20px;
+    margin-bottom: -15px;
+    color: #3a3a3a;
     /* background-color: #79A166; */
 }
 
@@ -131,6 +132,7 @@
     font-weight: 500;
     text-decoration: none;
     transition:  color 0.5s ease;
+    font-size: 12pt;
 }
 
 .links a:hover {
@@ -160,6 +162,8 @@ img {
 
 p {
     color: #9e9e9e;
+    font-weight: 400;
+    font-size: 10pt;
 }
 
 h3 {
