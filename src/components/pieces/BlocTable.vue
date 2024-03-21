@@ -33,19 +33,19 @@ function traverse(option) {
 
         <div class="image-spacer">
             <div class="image-container">
+                <button class="back" @click="traverse(1)"></button>
+                <button class="forward" @click="traverse(0)"></button>
                 <img v-show="selectedIndex==1"src="./piece-assets/bloc-table/1.JPG" alt="bloc-table">
                 <img v-show="selectedIndex==2"src="./piece-assets/bloc-table/2.JPG" alt="bloc-table">
                 <img v-show="selectedIndex==3"src="./piece-assets/bloc-table/3.JPG" alt="bloc-table">
                 <img v-show="selectedIndex==4"src="./piece-assets/bloc-table/4.JPG" alt="bloc-table">
+                
             </div>
             <div class="caption">
                 <h3>bloc table</h3>
                 <h5>white birch plywood, concrete         (2023)</h5>
                 <h5>(20"x30"x14")</h5>
-                <div>
-                    <button @click="traverse(1)"><</button>
-                    <button @click="traverse(0)">></button>
-                </div>
+                <h5>©</h5>
             </div>
         </div>
 
@@ -77,6 +77,7 @@ function traverse(option) {
         display: flex;
         width: inherit;
         justify-content: space-between;
+        align-items: baseline;
         /* background-color: aqua; */
     }
 
@@ -94,10 +95,27 @@ function traverse(option) {
 
     .image-container {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     max-width: 2000px;
     max-height: 65vh; /* Set max-height to the height of image-spacer */
+    }
+
+    .back {
+        position: absolute;
+        left: 0;
+        width: 30%;
+        height: 100%;
+        /* background-color: antiquewhite; */
+    }
+    .forward {
+        position: absolute;
+
+        right: 0;
+        width: 30%;
+        height: 100%;
+        /* background-color: antiquewhite; */
     }
 
     .image-container img {
