@@ -68,6 +68,8 @@ function toggleView(option) {
                 <ul>
                     <button @click="toggleView(3)" :class="{ selected: showDvdCabinet }">dvd cabinet</button>
                     <button @click="toggleView(2)" :class="{ selected: showBlocTable }">bloc table</button>
+                    <!-- <button @click="toggleView(2)" >book trough</button>
+                    <button @click="toggleView(2)" >cat dome</button> -->
                 </ul>
             </div>
 
@@ -75,6 +77,7 @@ function toggleView(option) {
                 <ul>
                     <button @click="toggleView(0)" :class="{ selected: showAbout }">about</button>
                     <button @click="toggleView(1)" :class="{ selected: showContact }">contact</button>
+                    
                 </ul>
             </div>
 
@@ -106,7 +109,7 @@ function toggleView(option) {
         display: flex;
         flex: 0;
         flex-direction: column;
-        /* background-color: lightgreen; */
+        background-color: rgb(243, 246, 243);
      
         min-width: 250px;
         /* justify-content: flex-end; */
@@ -114,10 +117,11 @@ function toggleView(option) {
 
     .logo {
         display: flex;
-        justify-content: baseline;
-        align-items:flex-end;
+        /* justify-content: flex-end; */
+        align-items:center;
         /* background-color: bisque; */
         padding-left: 45px;
+        padding-right: 20px;
 
         height: 15vh;
         min-height: 70px;
@@ -126,6 +130,7 @@ function toggleView(option) {
     }
 
     img {
+        margin-top: 40%;
         max-width: 100%; /* Maximum width of the image */
         max-height: 100%; /* Maximum height of the image */
         object-fit: contain; /*Maintain aspect ratio and fit within the container*/
@@ -177,7 +182,7 @@ function toggleView(option) {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(219, 215, 205);
+        background-color: rgb(248, 248, 235);
     }
     ul {
         display: flex;
