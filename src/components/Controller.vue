@@ -109,7 +109,7 @@ function toggleView(option) {
         display: flex;
         flex: 0;
         flex-direction: column;
-        background-color: rgb(243, 246, 243);
+        /* background-color: rgb(243, 246, 243); */
      
         min-width: 250px;
         /* justify-content: flex-end; */

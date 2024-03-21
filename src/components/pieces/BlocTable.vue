@@ -83,7 +83,7 @@ function traverse(option) {
     }
     .image-spacer {
         display: flex;
-        min-height: 65vh;
+        /* min-height: 65vh; */
         max-height: 65vh;
         /* background-color: yellowgreen; */
         align-items: flex-start;
@@ -184,7 +184,7 @@ function traverse(option) {
         align-items: flex-start;
         /* background-color: rgb(255, 231, 178); */
         min-height: 20vh;
-        max-height: 20vh;
+        /* max-height: 20vh; */
         color: #3a3a3a;
         width: 100%;
         /* gap: 16%; */
