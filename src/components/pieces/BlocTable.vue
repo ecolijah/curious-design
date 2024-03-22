@@ -29,7 +29,7 @@ function traverse(option) {
 
     <div class="container">
 
-        <div class="top-spacer"></div>
+        <!-- <div class="top-spacer"></div> -->
 
         <div class="image-spacer">
             <div class="image-container">
@@ -63,7 +63,7 @@ function traverse(option) {
                     <p>Originally inspired by japanese floor tables, the height is meant for comfortable seating on the ground. the concrete base 
                         weighs about 60lbs and the table all together about 90lbs.
                     </p>
-                    <!-- <p>The top comes off from the base, for an easier time trransporting the heavy table.</p> -->
+                    <p>The top comes off from the base, for an easier time trransporting the heavy table.</p>
                     <p>There is a small secret storage comportment under the table top, that is good place to hide something needed not frequently, as the tabletop is heavy.</p>
                 </div>
             </div>
@@ -77,19 +77,19 @@ function traverse(option) {
 
     .top-spacer {
         display: flex;
-        min-height: 15vh;
+        min-height: 5vh;
         max-height: 15vh;
         /* background-color: blue; */
     }
     .image-spacer {
         display: flex;
         /* min-height: 65vh; */
-        max-height: 65vh;
+        /* max-height: 65vh; */
         /* background-color: yellowgreen; */
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
     }
 
     .selected h5{
@@ -98,14 +98,20 @@ function traverse(option) {
         
     }
 
+    .caption h3 {
+        margin: 0;
+    }
 
+    .caption h5 {
+        margin: 0;
+    }
     .caption {
         display: flex;
-        width: inherit;
+        width: 100%;
         justify-content: space-between;
         align-items: baseline;
         /* background-color: aqua; */
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
 
     .numbers {
@@ -135,10 +141,13 @@ function traverse(option) {
     .container {
 
         display:  flex;
-        flex-direction: column;      
+        flex-direction: column;  
+        align-items: center;    
+        justify-content: center;
         /* background-color: greenyellow; */
-        padding-left: 80px;
-        padding-right: 80px;
+        /* padding-left: 10px; */
+        /* padding-right: 10px; */
+        /* margin: 0 0; */
         max-height: 100vh;
         min-height: 100vh;
  
@@ -150,7 +159,8 @@ function traverse(option) {
     align-items: center;
     justify-content: center;
     max-width: 2000px;
-    max-height: 63vh; /* Set max-height to the height of image-spacer */
+    /* background-color: brown; */
+    max-height: 63vh;
     }
 
     .back {
@@ -182,11 +192,11 @@ function traverse(option) {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        background-color: rgb(255, 231, 178);
-        min-height: 20vh;
+        /* background-color: rgb(255, 231, 178); */
+        min-height: 10vh;
         /* max-height: 20vh; */
         color: #3a3a3a;
-        width: 100%;
+        width: 90%;
         /* gap: 16%; */
         /* margin-top: -10px; */
     }
