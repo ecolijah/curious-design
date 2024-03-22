@@ -10,8 +10,8 @@ var showAbout =  ref(false);
 var showContact =  ref(false);
 
 //pieces: onmount is true for firts impression
-var showBlocTable =  ref(true);
-var showDvdCabinet =  ref(false);
+var showBlocTable =  ref(false);
+var showDvdCabinet =  ref(true);
 
 function toggleView(option) {
     //ideally pass argument for reusable function
