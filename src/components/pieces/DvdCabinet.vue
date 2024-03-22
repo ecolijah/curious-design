@@ -59,11 +59,9 @@ function traverse(option) {
 
                 </div>
                 <div class="description">
-                    <p>Originally inspired by japanese floor tables, the height is meant for comfortable seating on the ground. the concrete base 
-                        weighs about 60lbs and the table all together about 90lbs.
-                    </p>
+                    <p>Designed to to seamlessly encase a dvd collection, essentially transforming a pile of movies into one of my favorite things, an interactive piece of decor. (Hence, the crt TV.) </p>
                     <!-- <p>The top comes off from the base, for an easier time trransporting the heavy table.</p> -->
-                    <p>There is a small secret storage comportment under the table top, that is good place to hide something needed not frequently, as the tabletop is heavy.</p>
+                    <p></p>
                 </div>
             </div>
 
@@ -82,7 +80,7 @@ function traverse(option) {
         justify-content: center;
         /* background-color: greenyellow;   */
         width: 100%;  
-        height: 100%;
+        height: 90%
 
     }
 
@@ -105,7 +103,7 @@ function traverse(option) {
         align-items: center;
         justify-content: center;
         max-width: 100%;
-        max-height: 100%;
+        /* max-height: 70%; */
         overflow:hidden;
         /* background-color: brown; */
         /* max-height: 63vh; */
@@ -150,6 +148,7 @@ function traverse(option) {
         /* background-color: yellowgreen; */
         font-size: 8pt;
         color: #9e9e9e;
+        margin-top: 10px;
     }
     .description p {
         margin: 0;
@@ -170,7 +169,7 @@ function traverse(option) {
     .image-container img {
         max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
         /* max-height: 65vh; */
-        max-height: 100%;
+        /* max-height: 70%; */
         width: auto;
         height: auto;
         border-radius: 6px;
