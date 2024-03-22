@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-        <div class="top-spacer"></div>
+        <!-- <div class="top-spacer"></div> -->
         <div class="about-container">
             
         
-        <div class="details">
+            <div class="details">
 
             <div class="heading">
                 <div class="nameplate">
@@ -40,12 +40,12 @@
                 <a href="https://www.linkedin.com/in/elijah-lopez-65b809238/" target="_blank">linkedin</a>
             </div>
 
+            </div>
+            <div class="image-container">
+                <img src="../assets/aboutme-pic.png" alt="aboutmepic" />
+            </div>
         </div>
-        <div class="image-container">
-            <img src="../assets/aboutme-pic.png" alt="aboutmepic" />
-        </div>
-        </div>
-        <div class="bottom-spacer"></div>
+        <!-- <div class="bottom-spacer"></div> -->
     </div>
     
 </template>
@@ -53,15 +53,19 @@
 <style scoped>
 
 
-
+.heading {
+    display:  flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
 .container {
     /* background-color: aquamarine; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     /* min-height:100vh;
     max-height: 100vh; */
-    /* padding: 80px; */
+    padding: 20px;
 }
 .top-spacer {
     display: flex;
@@ -69,11 +73,17 @@
     max-height: 20vh;
     /* background-color: yellowgreen; */
 }
+
 .about-container {
     display: flex;
+    flex-wrap: wrap-reverse;
     /* min-height: 65vh; */
-    max-height: 55vh;
-    max-width: 75vw;
+    max-height: 100vh;
+    /* max-width: 75vw; */
+    /* flex-wrap:wrap-reverse; */
+    justify-content: center;
+    /* background-color: aliceblue; */
+    /* gap: 50px */
 
 }
 .bottom-spacer {
@@ -86,8 +96,9 @@
     display: flex;
     flex-direction: column;
     max-width: 500px;
+    max-height: 50vh;
     /* min-width: 300px; */
-    padding-right: 60px;
+    /* padding-right: 60px; */
     /* background-color: brown; */
     justify-content: space-between;
 }
@@ -95,9 +106,10 @@
 .nameplate {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     /* background-color: aquamarine; */
-    max-height: 50px;
+    flex-wrap: wrap;
+    /* max-height: 50px; */
     justify-content: space-between;
     /* margin-bottom: -10px; */
 }
@@ -114,7 +126,8 @@
 .titles p {
     /* height: 5px; */
     /* background-color: black; */
-    margin-bottom: -15px;
+    /* margin-bottom: -15px; */
+    margin: 0;
     color: #3a3a3a;
     /* background-color: #79A166; */
 }
@@ -141,11 +154,13 @@
 
 .image-container {
     display: flex;
-    max-height: 55vh;
+    /* flex: 0; */
+    max-height: 50vh;
     max-width: 80vw;
     /* min-height: 400px; */
     /* padding-right: 20px; */
     /* background-color: blue; */
+    /* margin: 20px; */
     
     justify-content: center;
 }
@@ -153,7 +168,8 @@
 img {
         /* width: 1920px; */
         /* height: 90vh; */
-        max-width: 100%; /* Maximum width of the image */
+        display: flex;
+        max-width: 90%; /* Maximum width of the image */
         max-height: 55vh; /* Maximum height of the image */
         object-fit: contain; /*Maintain aspect ratio and fit within the container*/
         border-radius: 6px;
@@ -173,9 +189,10 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: aqua; */
-    height: 50px;
-    padding-top: 20px;
+    /* background-color: brown; */
+    /* height: 50px; */
+    /* padding-top: 20px; */
+    margin: 0;
 }
 h1 {
     font-size: 40pt;
@@ -183,7 +200,8 @@ h1 {
     justify-content: center;
     align-items: center;
     /* background-color: red; */
-    max-height: 50px;
+    /* max-height: 50px; */
+    margin: 0;
     /* padding-bottom: 20px; */
 }
 </style>
