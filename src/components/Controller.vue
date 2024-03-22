@@ -117,22 +117,22 @@ function toggleView(option) {
 
     .logo {
         display: flex;
-        /* justify-content: flex-end; */
+        justify-content: center;
         align-items:center;
         /* background-color: bisque; */
-        padding-left: 45px;
-        padding-right: 20px;
+        /* padding-left: 45px;
+        padding-right: 20px; */
 
         height: 15vh;
-        min-height: 70px;
-        min-width: 183px;
+        /* min-height: 70px;
+        min-width: 183px; */
 
     }
 
     img {
-        margin-top: 40%;
-        max-width: 100%; /* Maximum width of the image */
-        max-height: 100%; /* Maximum height of the image */
+        /* margin-top: 40%; */
+        max-width: 65%; /* Maximum width of the image */
+        max-height: 65%; /* Maximum height of the image */
         object-fit: contain; /*Maintain aspect ratio and fit within the container*/
     }
 
