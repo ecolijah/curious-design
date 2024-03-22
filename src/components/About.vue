@@ -155,8 +155,8 @@
 .image-container {
     display: flex;
     /* flex: 0; */
-    /* max-height: 50vh; */
-    /* max-width: 80vw; */
+    max-height: 50vh;
+    max-width: 30vw;
     /* min-height: 400px; */
     /* padding-right: 20px; */
     /* background-color: blue; */
@@ -169,8 +169,9 @@ img {
         /* width: 1920px; */
         /* height: 90vh; */
         display: flex;
-        max-width: 90%; /* Maximum width of the image */
-        max-height: 60vh; /* Maximum height of the image */
+        max-width: 100%; /* Maximum width of the image */
+        max-height: 100%;
+        /* max-height: 60vh;  */
         object-fit: contain; /*Maintain aspect ratio and fit within the container*/
         border-radius: 6px;
         
@@ -200,7 +201,7 @@ h1 {
     justify-content: center;
     align-items: center;
     /* background-color: red; */
-    /* max-height: 50px; */
+    max-height: 60px;
     margin: 0;
     /* padding-bottom: 20px; */
 }
