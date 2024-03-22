@@ -82,7 +82,7 @@
     /* max-width: 75vw; */
     /* flex-wrap:wrap-reverse; */
     justify-content: center;
-    /* background-color: aliceblue; */
+    /* background-color: yellowgreen; */
     /* gap: 50px */
 
 }
@@ -96,7 +96,7 @@
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    max-height: 50vh;
+    max-height: 60vh;;
     /* min-width: 300px; */
     /* padding-right: 60px; */
     /* background-color: brown; */
@@ -155,8 +155,8 @@
 .image-container {
     display: flex;
     /* flex: 0; */
-    max-height: 50vh;
-    max-width: 80vw;
+    /* max-height: 50vh; */
+    /* max-width: 80vw; */
     /* min-height: 400px; */
     /* padding-right: 20px; */
     /* background-color: blue; */
@@ -170,7 +170,7 @@ img {
         /* height: 90vh; */
         display: flex;
         max-width: 90%; /* Maximum width of the image */
-        max-height: 55vh; /* Maximum height of the image */
+        max-height: 60vh; /* Maximum height of the image */
         object-fit: contain; /*Maintain aspect ratio and fit within the container*/
         border-radius: 6px;
         
