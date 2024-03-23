@@ -20,22 +20,17 @@
             </div>
 
             <div class="about-text">
-                <p>Lorem  ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod  tempor incididunt ut 
-                    labore et dolore magna aliqua. Amet consectetur  
-                    adipiscing elit pellentesque habitant. Magna etiam
-                    tempor orci eu  lobortis. Augue ut lectus arcu bibendum.
+                <p><strong>Hi!</strong> ive always enjoyed the process of making. Either physical or digital, doesnt matter, 
+                    the process is the same, and the result is usually trivial. (like a youth sports trophy) 
+                    Slowly accumulating progress and knowledge through probing different approaches and techniques.
+                    A never ending aspiration to be be more adept to solve a problem than you were just one project ago.
                 </p>
-                <p>Lorem  ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod  tempor incididunt ut 
-                    labore et dolore magna aliqua. Augue ut lectus arcu bibendum.
+                <p>Ah, thats what it's all about.
                 </p>
             </div>
 
             <div class="links">
-                <a href="" target="_blank">instagram</a>
+                <!-- <a href="" target="_blank">instagram</a> -->
                 <a href="https://github.com/ecolijah" target="_blank">github</a>
                 <a href="https://www.linkedin.com/in/elijah-lopez-65b809238/" target="_blank">linkedin</a>
             </div>
@@ -135,8 +130,8 @@
 .links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 15%;
+    justify-content: flex-start;
+    gap: 30%;
     /* background-color: aliceblue; */
 
 }
@@ -174,6 +169,8 @@ img {
         /* max-height: 60vh;  */
         object-fit: contain; /*Maintain aspect ratio and fit within the container*/
         border-radius: 6px;
+        -webkit-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.15); 
+        box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.15);
         
 }
 
