@@ -10,8 +10,8 @@ var showAbout =  ref(false);
 var showContact =  ref(false);
 
 //pieces: onmount is true for firts impression
-var showBlocTable =  ref(false);
-var showDvdCabinet =  ref(true);
+var showBlocTable =  ref(true);
+var showDvdCabinet =  ref(false);
 
 function toggleView(option) {
     //ideally pass argument for reusable function
@@ -66,8 +66,8 @@ function toggleView(option) {
 
             <div class="buttons">
                 <ul>
-                    <button @click="toggleView(3)" :class="{ selected: showDvdCabinet }">dvd cabinet</button>
                     <button @click="toggleView(2)" :class="{ selected: showBlocTable }">bloc table</button>
+                    <button @click="toggleView(3)" :class="{ selected: showDvdCabinet }">dvd cabinet</button>
                     <!-- <button @click="toggleView(2)" >book trough</button>
                     <button @click="toggleView(2)" >cat dome</button> -->
                 </ul>

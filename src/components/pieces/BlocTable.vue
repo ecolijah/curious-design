@@ -56,8 +56,8 @@ function traverse(option) {
                 </div>
                 <div class="description">
                     <p>Originally inspired by japanese floor tables, the height is meant for comfortable seating on the ground. 
-                        The table all together weighs about 90lbs, purposefully, to provide stabilty even on a high pile rug.
-                        Small Secret storage under the tabletop.
+                        The table all together weighs about 90lbs, purposefully, to provide stabilty even on a high pile rug. There
+                        is a small secret storage compartment under the tabletop as well.
                     </p>
                     <!-- <p>The top comes off from the base, for an easier time trransporting the heavy table.</p> -->
                     <!-- <p>There is a small secret storage comportment under the table top, that is good place to hide something needed infrequently, as the tabletop is heavy.</p> -->
