@@ -61,7 +61,7 @@ function toggleView(option) {
         <div class="sidebar">
 
             <div class="logo">
-                <img src="../assets/curious-logo.svg" alt="logo"/>
+                <img src="../assets/finall.svg" alt="logo"/>
             </div>
 
             <div class="buttons">
