@@ -61,7 +61,7 @@ function toggleView(option) {
         <div class="sidebar">
 
             <div class="logo">
-                <img src="../assets/curious-logo.png" alt="logo"/>
+                <img src="../assets/curious-logo.svg" alt="logo"/>
             </div>
 
             <div class="buttons">
@@ -182,7 +182,7 @@ function toggleView(option) {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(248, 248, 235);
+        background-color: rgb(252, 252, 240);
     }
     ul {
         display: flex;
