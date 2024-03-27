@@ -71,6 +71,17 @@ function traverse(option) {
 </template>
 
 <style scoped>
+    @media only screen and (min-width: 800px) {
+        .image-container {
+            max-width: 1800px
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .image-spacer {
+            max-width: 85%;
+        }
+    }
 
     .container {
 
@@ -80,6 +91,7 @@ function traverse(option) {
         /* background-color: greenyellow;   */
         width: 100%;  
         height: 90%;
+        max-width: 1700px;
 
     }
 
@@ -92,7 +104,7 @@ function traverse(option) {
         flex-direction: column;
         /* max-width: 90%; */
         width: auto;
-        max-width: 75%
+        max-width: 85%
 
     }
 
@@ -126,6 +138,7 @@ function traverse(option) {
     .caption {
         display: flex;
         width: 100%;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: baseline;
         /* background-color: aqua; */

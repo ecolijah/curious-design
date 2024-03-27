@@ -72,6 +72,17 @@ function traverse(option) {
 </template>
 
 <style scoped>
+    @media only screen and (min-width: 800px) {
+        .image-container {
+            max-width: 1800px
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .image-spacer {
+            max-width: 85%;
+        }
+    }
 
     .container {
 
@@ -80,7 +91,8 @@ function traverse(option) {
         justify-content: center;
         /* background-color: greenyellow;   */
         width: 100%;  
-        height: 90%
+        height: 90%;
+        max-width: 1700px;
 
     }
 
@@ -93,7 +105,7 @@ function traverse(option) {
         flex-direction: column;
         /* max-width: 90%; */
         width: auto;
-        max-width: 75%
+        max-width: 85%
 
     }
 
@@ -103,7 +115,7 @@ function traverse(option) {
         align-items: center;
         justify-content: center;
         max-width: 100%;
-        /* max-height: 70%; */
+        max-height: 100%;
         overflow:hidden;
         /* background-color: brown; */
         /* max-height: 63vh; */
@@ -127,6 +139,7 @@ function traverse(option) {
     .caption {
         display: flex;
         width: 100%;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: baseline;
         /* background-color: aqua; */
@@ -169,7 +182,7 @@ function traverse(option) {
     .image-container img {
         max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
         /* max-height: 65vh; */
-        /* max-height: 70%; */
+        max-height: 100%;
         width: auto;
         height: auto;
         border-radius: 6px;
