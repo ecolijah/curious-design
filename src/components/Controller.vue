@@ -12,6 +12,7 @@ var showContact =  ref(false);
 //pieces: onmount is true for firts impression
 var showBlocTable =  ref(true);
 var showDvdCabinet =  ref(false);
+const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 var showMobileMenu =  ref(false);
 function toggleMobileMenu() {
@@ -71,7 +72,8 @@ function toggleView(option) {
         <div class="sidebar">
 
             <div class="logo">
-                <img src="../assets/finall.svg" alt="logo"/>
+                <img v-show="!isDarkMode" src="../assets/finall.svg" alt="logo"/>
+                <img v-show="isDarkMode" src="../assets/finall-white.svg" alt="logo"/>
             </div>
 
             <div class="buttons">
@@ -147,7 +149,7 @@ function toggleView(option) {
         font-weight: 400;
         font-family: inherit;
         cursor: pointer;
-        color: #474747;
+        color: var(--menu-button-color);
     }
     .logo {
         display: flex;
@@ -174,7 +176,7 @@ function toggleView(option) {
     button {
         text-align: center;
         border: none;
-        background-color: rgb(252, 252, 240);
+        background-color: var(--content-bg-color);
 
         cursor: pointer;
 
@@ -195,7 +197,7 @@ function toggleView(option) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgb(252, 252, 240);
+        background-color: var(--content-bg-color);
 
     }
 
@@ -222,7 +224,8 @@ function toggleView(option) {
         transition: max-height 0.5s ease-in-out;
         margin-bottom: 10px;
         /* background-color: #bddd9462; */
-        background-color: rgb(252, 252, 240);
+        background-color: var(--content-bg-color);
+
 
 
         padding-right: 50px;
@@ -280,12 +283,13 @@ function toggleView(option) {
     }
 
     .buttons button:hover {
-        color: #9FCB85;
+        color: var(--accent-color);
+        
 
 
     }
     .buttons-2 button:hover {
-        color: #9FCB85;
+        color: var(--accent-color);
 
     }
 
@@ -308,7 +312,7 @@ function toggleView(option) {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(252, 252, 240);
+        background-color: var(--content-bg-color);
     }
     ul {
         display: flex;
@@ -318,7 +322,7 @@ function toggleView(option) {
 
 
     .selected {
-        color: #9E9E9E;
+        color: var(--p-color);
         text-decoration: line-through;
         
     }

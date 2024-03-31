@@ -59,8 +59,6 @@ function traverse(option) {
                         The table all together weighs about 90lbs, purposefully, to provide stabilty even on a high pile rug. There
                         is a small secret storage compartment under the tabletop as well.
                     </p>
-                    <!-- <p>The top comes off from the base, for an easier time trransporting the heavy table.</p> -->
-                    <!-- <p>There is a small secret storage comportment under the table top, that is good place to hide something needed infrequently, as the tabletop is heavy.</p> -->
                 </div>
             </div>
 
@@ -88,7 +86,6 @@ function traverse(option) {
         display:  flex;
         align-items: center;    
         justify-content: center;
-        /* background-color: greenyellow;   */
         width: 100%;  
         height: 90%;
         max-width: 1700px;
@@ -98,11 +95,9 @@ function traverse(option) {
     .image-spacer {
         display: flex;
         max-height: 100%;
-        /* background-color: red; */
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        /* max-width: 90%; */
         width: auto;
         max-width: 85%
 
@@ -116,14 +111,13 @@ function traverse(option) {
         max-width: 100%;
         max-height: 100%;
         overflow:hidden;
-        /* background-color: brown; */
-        /* max-height: 63vh; */
+
     }
 
 
 
     .selected h5{
-        color: #3a3a3a;
+        color: var(--num-selected-color);
         font-weight: 700;
         
     }
@@ -141,25 +135,21 @@ function traverse(option) {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: baseline;
-        /* background-color: aqua; */
-        /* margin-bottom: 50px; */
+
     }
 
     .numbers {
         display: flex;
         width: inherit;
-        /* background-color: aqua; */
         gap: 1%;
-        /* margin-top:  5%; */
 
     }
 
     .description {
         display: flex;
         flex-direction: column;
-        /* background-color: yellowgreen; */
         font-size: 8pt;
-        color: #9e9e9e;
+        color: var(--p-color);
         margin-top: 10px;
     }
     .description p {
@@ -169,9 +159,8 @@ function traverse(option) {
     .numbers button {
         font-weight: 400;
         font-size: 8pt;
-        color: #9E9E9E;
-        
-        /* color: blue; */
+        color: var(--p-color);
+
     }
 
 
@@ -179,27 +168,22 @@ function traverse(option) {
 
 
     .image-container img {
-        max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
-        /* max-height: 65vh; */
+        max-width: 100%; 
         max-height: 100%;
         width: auto;
         height: auto;
         border-radius: 6px;
-
     }
 
     .nav {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        /* background-color: rgb(255, 231, 178); */
         min-height: 10vh;
-        /* max-height: 20vh; */
-        color: #3a3a3a;
+        color: var(--num-selected-color);
         margin: 0;
         width: 100%;
-        /* gap: 16%; */
-        /* margin-top: -10px; */
+
     }
     .nav h3 {
         font-weight: 500;
@@ -209,7 +193,7 @@ function traverse(option) {
     h5 {
         font-weight: 400;
         font-size: 8pt;
-        color: #9e9e9e;
+        color: var(--p-color);
     }
 
 
@@ -225,15 +209,14 @@ function traverse(option) {
         left: 0;
         width: 35%;
         height: 100%;
-        /* background-color: antiquewhite; */
     }
+
     .forward {
         position: absolute;
 
         right: 0;
         width: 65%;
         height: 100%;
-        /* background-color: antiquewhite; */
     }
 
 </style>
