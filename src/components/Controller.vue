@@ -17,6 +17,7 @@ const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme
 var showMobileMenu =  ref(false);
 function toggleMobileMenu() {
         showMobileMenu.value = !showMobileMenu.value;
+        console.log("isdark: " + isDarkMode)
 
     }
     
@@ -98,7 +99,8 @@ function toggleView(option) {
         <div class="mobile-menu">
             <div class="logo">
                 <button @click="toggleMobileMenu">
-                    <img src="../assets/finall.svg" alt="logo"/>
+                    <img v-show="!isDarkMode" src="../assets/finall.svg" alt="logo"/>
+                    <img v-show="isDarkMode" src="../assets/finall-white.svg" alt="logo"/>
                 </button>
                 
             </div>
