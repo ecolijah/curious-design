@@ -38,7 +38,7 @@ function traverse(option) {
                 <img v-show="selectedIndex==2"src="./piece-assets/dvd-cabinet/2.JPG" alt="dvd-cabinet">
                 <img v-show="selectedIndex==3"src="./piece-assets/dvd-cabinet/3.JPG" alt="dvd-cabinet">
                 <img v-show="selectedIndex==4"src="./piece-assets/dvd-cabinet/4.JPG" alt="dvd-cabinet">
-                <img v-show="selectedIndex==5"src="./piece-assets/dvd-cabinet/5.JPG" alt="dvd-cabinet">
+
 
             </div>
 
