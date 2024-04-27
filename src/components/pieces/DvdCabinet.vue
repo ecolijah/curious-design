@@ -10,7 +10,7 @@ function traverse(option) {
     switch(option) {
         //next
         case 0:
-            if (selectedIndex.value !=5)
+            if (selectedIndex.value !=4)
                 selectedIndex.value += 1;
             break;
         case 1:
@@ -55,7 +55,7 @@ function traverse(option) {
                     <button @click="selectedIndex=2" :class="{ selected: selectedIndex == 2}"><h5>2</h5></button>
                     <button @click="selectedIndex=3" :class="{ selected: selectedIndex == 3}"><h5>3</h5></button>
                     <button @click="selectedIndex=4" :class="{ selected: selectedIndex == 4}"><h5>4</h5></button>
-                    <button @click="selectedIndex=5" :class="{ selected: selectedIndex == 5}"><h5>5</h5></button>
+                   
 
                 </div>
                 <div class="description">
